@@ -1,0 +1,3 @@
+<div *ngIf="books && books.length > 0">
+  <app-book-item *ngFor="let book of books" [book]="book" (delete)="onDelete($event)" (details)="onDetails($event)"></app-book-item>
+</div>

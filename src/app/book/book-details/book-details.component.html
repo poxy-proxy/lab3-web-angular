@@ -1,0 +1,9 @@
+<br/>
+<div *ngIf="book">
+  <input type="text" name="title" [(ngModel)]="book.title" required/><br/>
+  <input type="text" name="author" [(ngModel)]="book.author" required/><br/>
+  <input type="number" name="numberPage" [(ngModel)]="book.numberPages" required/><br/>
+  <input type="number" name="circulations" [(ngModel)]="book.circulations" required/><br/>
+  <input type="date" name="dateWriting" [(ngModel)]="book.dateWriting" required/><br/>
+  <button (click)="onUpdate()">Изменить</button>
+</div>

@@ -1,0 +1,3 @@
+<app-book-form (create)="create($event)"></app-book-form>
+<app-book-list [books]="books" (delete)="delete($event)" (details)="details($event)"></app-book-list>
+<app-book-details [book]="book" (update)="update($event)"></app-book-details>
